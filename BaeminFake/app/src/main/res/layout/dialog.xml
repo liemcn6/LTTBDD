@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="100dp"
+    android:background="@drawable/border_6_noti"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Vui lòng xác nhận mật khẩu trước khi thực hiện thay đổi." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Mật khẩu: " />s
+
+    <EditText
+        android:id="@+id/repass"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/border_6_white"
+        android:inputType="textPassword" />
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.FragmentSearch">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        app:iconifiedByDefault="false"
+        app:queryHint="Tim kiem"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_from_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bắt đầu">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tvFrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textAutoComplete|textCapWords"
+        android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_to_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kết thúc ">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvTO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textAutoComplete|textCapWords"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spChuyenNganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchbutton"
+        android:text="Search"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

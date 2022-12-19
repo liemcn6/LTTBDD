@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/group0"
+           android:visible="false">
+        <item android:id="@+id/sync_switch"
+              android:icon="@drawable/ic_sync_black_24dp"
+              android:title="@string/sync_switch"
+              app:actionLayout="@layout/menu_switch"
+              app:showAsAction="ifRoom"/>
+    </group>
+
+    <group android:id="@+id/group1">
+        <item android:id="@+id/silence_all_alarms"
+              android:icon="@drawable/ic_vibration_grey_500_24dp"
+              android:title="@string/silence_all_alarms"
+              app:actionLayout="@layout/menu_switch"
+              app:showAsAction="ifRoom"
+              android:visible="false"/>
+
+        <item android:id="@+id/select_category"
+              android:icon="@drawable/ic_apps_grey_500_24dp"
+              android:title="@string/select_category"/>
+
+        <item android:id="@+id/select_theme"
+              android:icon="@drawable/ic_invert_colors_on_grey_500_24dp"
+              android:title="@string/app_theme"/>
+
+        <item android:id="@+id/show_notification_toggle"
+              android:icon="@drawable/ic_notifications_on_grey_500_24dp"
+              android:title="@string/show_notification"
+              app:actionLayout="@layout/menu_switch"
+              app:showAsAction="always"/>
+    </group>
+
+    <group android:id="@+id/group2">
+        <item android:id="@+id/info"
+              android:icon="@drawable/ic_info_grey_500_24dp"
+              android:title="@string/info"/>
+    </group>
+</menu>

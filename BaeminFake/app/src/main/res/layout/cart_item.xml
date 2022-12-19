@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="35dp">
+
+        <ImageView
+            android:id="@+id/cart_img"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/cart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Item XYZ"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/cart_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="500$"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/cart_img"
+            app:layout_constraintTop_toBottomOf="@id/cart_name" />
+
+        <TextView
+            android:id="@+id/cart_restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:text="Cơm ngon ba ghiền"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/cart_price"
+            app:layout_constraintTop_toBottomOf="@id/cart_name" />
+
+        <RatingBar
+            android:id="@+id/cart_rate"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toEndOf="@id/cart_img"
+            app:layout_constraintTop_toBottomOf="@id/cart_price" />
+
+        <TextView
+            android:id="@+id/cart_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:text="(50+)"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/cart_rate"
+            app:layout_constraintTop_toBottomOf="@id/cart_restaurant" />
+
+        <TextView
+            android:id="@+id/cart_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="Ngày order: 28/05/2021"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/cart_order"
+            app:layout_constraintTop_toBottomOf="@id/cart_restaurant" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/check_pay"
+        android:clickable="false"
+        android:layout_width="35dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/soluong_pay"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="3" />
+</androidx.cardview.widget.CardView>

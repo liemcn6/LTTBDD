@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SQLiteBottomNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="status">
+        <item>CNTT</item>
+        <item>Kế toán</item>
+        <item>Thiết kế đồ họa</item>
+        <item>Quản trị kinh doanh</item>
+    </string-array>
+</resources>

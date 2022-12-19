@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLiteTab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="status">
+        <item>Chưa thực hiện</item>
+        <item>Đang thực hiện</item>
+        <item>Hoàn thành</item>
+    </string-array>
+</resources>

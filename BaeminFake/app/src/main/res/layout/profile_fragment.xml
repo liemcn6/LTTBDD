@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".fragment.ProfileFragment">
+
+    <TextView
+        android:id="@+id/cammera"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_baseline_photo_camera_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/back_to_main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/login_logo"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="115dp"
+        android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:text="Sơn"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="155dp"
+        android:layout_marginBottom="75dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/name_profile">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <ImageButton
+                android:id="@+id/img_verifi"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/message" />
+
+            <TextView
+                android:id="@+id/get_verifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="45dp"
+                android:text="Nhấp vào ảnh để xác thực email!"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_get_verifi"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="65dp"
+                android:text="Bạn sẽ nhận được nhiều thông báo quan trọng và dùng email cho việc đặt lại mật khẩu." />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/my_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Đơn hàng của tôi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/favorite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Nhà hàng yêu thích"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/purchase_history"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Quản lí thanh toán"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/wallet_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Ví Coupon"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/address_manager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="Cài đặt"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="About"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Bản quyền thuộc về Sơn Khương"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

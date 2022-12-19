@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentInfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cat4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="lập trình react native"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintTop_toTopOf="@id/img"
+        app:layout_constraintStart_toEndOf="@id/img"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/strength_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tóm tắt:"
+        android:textStyle="italic"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintTop_toBottomOf="@id/img"
+        app:layout_constraintStart_toStartOf="@id/img"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/strengths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khóa học rất hay"
+        android:textAppearance="?attr/textAppearanceListItem"
+        app:layout_constraintTop_toBottomOf="@id/strength_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

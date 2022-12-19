@@ -1,0 +1,2 @@
+rootProject.name = "BaeminFake"
+include ':app'

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "189637371546",
+    "project_id": "baeminfake-6d59c",
+    "storage_bucket": "baeminfake-6d59c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189637371546:android:1d1156c7346e2d8fe76123",
+        "android_client_info": {
+          "package_name": "com.example.baeminfake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189637371546-ef7s0g5p8doabn17r698ajc6rgnc7eot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi9tZx2EHgDWMR0lYDDOEuUREYUXJAirI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189637371546-ef7s0g5p8doabn17r698ajc6rgnc7eot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
